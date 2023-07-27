@@ -40,7 +40,6 @@ html {
 body {
     width: 100vw;
     height: 100vw;
-    font-family: sans-serif;
     background-color: rgb(117, 212, 246);
     background-size: cover ;
     background-position: 50% 0%;
@@ -440,10 +439,182 @@ main h2 {
 }
 
 .boxComments figure img {
-    width: 10vw;
-    height: 20vh;
+    width: 7vw;
+    height: 17vh;
     border-radius: 50%;
 }
+
+.budget {
+    width: 100vw;
+    background-color: #FFF;
+}
+
+.budget h1 {
+    text-align: center;
+    padding: 50px ;
+    font-size: 2.5rem;
+}
+
+.container-budget{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+.box-budget {
+    background-color: rgb(117, 212, 246);
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    box-shadow: 5px 5px 5px #D3D3D3;
+    margin-bottom: 100px;
+}
+
+.box-budget div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.box-budget button {
+   padding: 15px; 
+   background-color: #005466;
+   border: none;
+   font-weight: 900;
+   color: #FFF;
+   cursor: pointer;
+}
+
+.box-budget button:hover {
+    transform: scale(1.1);
+}
+
+.box-budget h1 {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding: 10px 10px 10px 0;
+    border-bottom: 1px solid #005466;
+}
+
+.box-budget span {
+    display: flex;
+    align-items: center;
+}
+
+.box-budget span img {
+    width: 30px;
+}
+
+.contact {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.box-contact {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-contact:last-child {
+    background-color: #FFF;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.contact h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.box-contact-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.box-contact-bottom img {
+    width: 90px;
+}
+
+.box-contact-bottom h1 {
+    font-size: 1.5rem;
+}
+
+.box-contact-bottom p {
+    font-size: 1rem;
+    line-height: 20px;
+    font-weight: 500;
+    color: #005466;
+}
+
+.contact span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #005466;
+    line-height: 20px;
+}
+
+.box-contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-contact form input {
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #005466;
+    font-size: 1rem;
+    outline: none;
+    color: #005466;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box-contact form textarea {
+    border: none;
+    border-bottom: 1px solid #005466;
+    font-size: 1rem;
+    outline: none;
+    color: #005466;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box-contact form input::placeholder, textarea::placeholder {
+    color: #005466;
+}
+
+.box-contact form input:focus {
+    border-bottom: 1px solid #0657f8;
+}
+
+.box-contact form textarea:focus {
+    border-bottom: 1px solid #0657f8;
+}
+
+.box-contact button {
+    padding: 15px; 
+    background-color: #005466;
+    border: none;
+    font-weight: 900;
+    color: #FFF;
+    cursor: pointer;
+    margin-top: 15PX;
+ }
+ 
+ .box-contact button:hover {
+     opacity: 0.8;
+ }
 
 .faq {
     width: 100vw;
@@ -465,10 +636,13 @@ main h2 {
     margin-bottom: 50px;
 }
 
-
 details {
     width: 50vw;
     margin-bottom: 10px;
+}
+
+details:hover {
+    cursor: pointer;
 }
 
 details summary {

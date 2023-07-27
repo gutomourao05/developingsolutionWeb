@@ -21,7 +21,7 @@
       <div></div>
     </div>
     <div class="container-geral">
-      <div id="popup">
+      <!-- <div id="popup">
         <span onclick="{closeBanner()}">FECHAR</span>
         <a
           href="https://api.whatsapp.com/send?1=pt_BR&phone=5541996500636"
@@ -29,15 +29,18 @@
           rel="noopener noreferrer"
           ><img src="./img/banner.jpg" alt="Banner de promoção"
         /></a>
-      </div>
+      </div> -->
       <header>
         <nav>
           <ul>
             <li><a class="active" href="#home">HOME</a></li>
             <li><a href="#about">QUEM SOMOS</a></li>
-            <li><a href="#why">SERVIÇOS</a></li>
-            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#mission">MISSÃO</a></li>
+            <li><a href="#why">PORQUE?</a></li>
+            <li><a href="#services">SERVIÇOS</a></li>
+            <li><a href="#budget">ORÇAMENTO</a></li>
             <li><a href="#contact">CONTATO</a></li>
+            <li><a href="#faq">FAQ</a></li>
           </ul>
         </nav>
 
@@ -81,13 +84,14 @@
           <span onclick="{closeMenu()}">X</span>
           <nav>
             <ul>
-              <li><a onclick="{closeMenu()}" href="#home">HOME</a></li>
-              <li><a onclick="{closeMenu()}" href="#about">QUEM SOMOS</a></li>
-              <li><a onclick="{closeMenu()}" href="#services">SERVIÇOS</a></li>
-              <li>
-                <a onclick="{closeMenu()}" href="#faq">FAQ</a>
-              </li>
-              <li><a onclick="{closeMenu()}" href="#contact">CONTATO</a></li>
+              <li><a onclick={closeMenu()} href="#home">HOME</a></li>
+              <li><a onclick={closeMenu()} href="#about">QUEM SOMOS</a></li>
+              <li><a onclick={closeMenu()} href="#mission">MISSÃO</a></li>
+              <li><a onclick={closeMenu()} href="#why">PORQUE?</a></li>
+              <li><a onclick={closeMenu()} href="#services">SERVIÇOS</a></li>
+              <li><a onclick={closeMenu()} href="#budget">ORÇAMENTO</a></li>
+              <li><a onclick={closeMenu()} href="#contact">CONTATO</a></li>
+              <li><a onclick={closeMenu()} href="#faq">FAQ</a></li>
             </ul>
           </nav>
         </div>
@@ -135,7 +139,7 @@
           <img id="img-foguete" src="./img/foguete.png" alt="Missão" />
         </div>
 
-        <div class="rigth2">
+        <div class="rigth2" id="mission">
           <h1>Missão</h1>
           <p>
             Nossa missão é ajudar nossos clientes a terem uma presença digital
@@ -225,7 +229,7 @@
         </div>
       </section>
 
-      <section class="services">
+      <section class="services" id="services">
         <div class="services-box">
           <h5>Bônus</h5>
           <div>
@@ -349,6 +353,204 @@
         </div>
       </section>
 
+      <section class="budget" id="budget">
+        <h1>
+          E aí, qual o site de <br />
+          sua preferencia?
+        </h1>
+        <div class="container-budget">
+          <div class="box-budget">
+            <h1>Landing Page</h1>
+            <span
+              ><img src="./img/checkmark.png" /> Desenvolvimento da Landing
+              Page</span
+            >
+            <span
+              ><img src="./img/checkmark.png" /> Página 100% focada em
+              conversão</span
+            >
+            <span><img src="./img/checkmark.png" /> Layout Responsivo</span>
+            <span
+              ><img src="./img/checkmark.png" /> Configuração de formulário de
+              contato</span
+            >
+            <span
+              ><img src="./img/checkmark.png" /> Integração com Google
+              Analytics</span
+            >
+            <span><img src="./img/checkmark.png" /> Otimização para SEO</span>
+            <span
+              ><img src="./img/checkmark.png" /> Cadastro no Google Meu
+              Negócio</span
+            >
+            <span
+              ><img src="./img/checkmark.png" /> Dicas para divulgação do seu
+              site</span
+            >
+            <span
+              ><img src="./img/checkmark.png" /> Prazo de entrega de 15 dias
+              úteis</span
+            >
+
+            <div>
+              <a href="https://api.whatsapp.com/send?phone=5541996500636&text=LandingPage" target="_blank" rel="noopener noreferrer"><button>FAZER ORÇAMENTO</button></a>
+            </div>
+          </div>
+
+          <div class="box-budget">
+            <h1>Site Onepage</h1>
+            <span
+              ><img src="./img/checkmark.png" /> Desenvolvimento do site One
+              Page</span
+            >
+            <span><img src="./img/checkmark.png" /> Menu superior</span>
+            <span><img src="./img/checkmark.png" /> Layout Responsivo</span>
+            <span
+              ><img src="./img/checkmark.png" /> Configuração de formulário de
+              contato</span
+            >
+            <span
+              ><img src="./img/checkmark.png" /> Integração com Google
+              Analytics</span
+            >
+            <span><img src="./img/checkmark.png" /> Otimização para SEO</span>
+            <span
+              ><img src="./img/checkmark.png" /> Cadastro no Google Meu
+              Negócio</span
+            >
+            <span
+              ><img src="./img/checkmark.png" /> Dicas para divulgação do seu
+              site</span
+            >
+            <span
+              ><img src="./img/checkmark.png" /> Prazo de entrega de 20 dias
+              úteis</span
+            >
+
+            <div>
+              <a href="https://api.whatsapp.com/send?phone=5541996500636&text=Onepage" target="_blank" rel="noopener noreferrer"><button>FAZER ORÇAMENTO</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-budget">
+          <div class="box-budget">
+            <h1>Site Multipages</h1>
+            <span
+              ><img src="./img/checkmark.png" /> Site completo com várias
+              páginas</span
+            >
+            <span><img src="./img/checkmark.png" /> Layout Responsivo</span>
+            <span
+              ><img src="./img/checkmark.png" /> Configuração de formulário de
+              contato</span
+            >
+            <span
+              ><img src="./img/checkmark.png" /> Integração com Google
+              Analytics</span
+            >
+            <span
+              ><img src="./img/checkmark.png" /> Cadastro no Google Meu
+              Negócio</span
+            >
+            <span
+              ><img src="./img/checkmark.png" /> Dicas para divulgação do seu
+              site</span
+            >
+            <span><img src="./img/checkmark.png" /> Prazo a combinar</span>
+            <span
+              ><img src="./img/checkmark.png" /> Outros recursos a
+              combinar</span
+            >
+
+            <div>
+              <a href="https://api.whatsapp.com/send?phone=5541996500636&text=Multipages" target="_blank" rel="noopener noreferrer"><button>FAZER ORÇAMENTO</button></a>
+            </div>
+          </div>
+
+          <div class="box-budget">
+            <h1>Loja Virtual</h1>
+            <span
+              ><img src="./img/checkmark.png" /> Site completo com várias
+              páginas</span
+            >
+            <span><img src="./img/checkmark.png" /> Layout Responsivo</span>
+            <span
+              ><img src="./img/checkmark.png" /> Configuração de formulário de
+              contato</span
+            >
+            <span
+              ><img src="./img/checkmark.png" /> Integração com Google
+              Analytics</span
+            >
+            <span
+              ><img src="./img/checkmark.png" /> Cadastro no Google Meu
+              Negócio</span
+            >
+            <span
+              ><img src="./img/checkmark.png" /> Dicas para divulgação do seu
+              site</span
+            >
+            <span><img src="./img/checkmark.png" /> Prazo a combinar</span>
+            <span
+              ><img src="./img/checkmark.png" /> Outros recursos a
+              combinar</span
+            >
+
+            <div>
+              <a href="https://api.whatsapp.com/send?phone=5541996500636&text=Loja Virtual" target="_blank" rel="noopener noreferrer"><button>FAZER ORÇAMENTO</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="box-contact">
+          <h1>Contato</h1>
+          <span
+            >Entre em contato para tirar possíveis dúvidas e iniciarmos o
+            desenvolvimento do site de seu negócio! Te responderemos o mais
+            breve possível.</span
+          >
+
+          <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5541996500636" target="_blank" rel="noopener noreferrer">
+            <div class="box-contact-bottom">
+              <div>
+                <img src="./img/whatsapp-contact.png" alt="icone whatsapp" />
+              </div>
+  
+              <div>
+                <h1>WhatsApp (41) 99650-0636</h1>
+                <p>
+                  Clique aqui para ser direcionado automaticamente para nosso
+                  WhatsApp
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="box-contact">
+          <h1>Envie uma mensagem em nosso e-mail</h1>
+          <form method="post" id="form" action="./php/send-email.php">
+            <input type="text" name="name" placeholder="Nome (obrigatório)" />
+            <input type="tex" name="email" placeholder="Email (obrigatório)" />
+            <input
+              type="text"
+              name="phone"
+              placeholder="Seu WhatsApp (opcional)"
+            />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="5"
+              placeholder="Menssagem (obrigatório)"
+            ></textarea>
+            <button type="submit" id="button-enviar-email">ENVIAR</button>
+          </form>
+        </div>
+      </section>
+
       <section class="faq" id="faq">
         <h1>Perguntas Frequentes</h1>
         <div class="container-faq">
@@ -398,19 +600,32 @@
         </div>
       </section>
 
-      <footer id="contact">
+      <footer>
+        <div class="container-footer-nav">
+          <span><b>Navegue</b></span>
+          <nav>
+            <ul>
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#about">QUEM SOMOS</a></li>
+              <li><a href="#mission">MISSÃO</a></li>
+              <li><a href="#why">PORQUE?</a></li>
+              <li><a href="#services">SERVIÇOS</a></li>
+              <li><a href="#budget">ORÇAMENTO</a></li>
+              <li><a href="#contact">CONTATO</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </nav>
+        </div>
         <div>
           <span>
             <b>Serviços:</b><br />
             Melhorar visibilidade da empresa no Google.<br />
             Desenvolvimento de sites responsivos, sistemas e apps.<br />
-            Trafego pago (Google, Facebook, Instragran).<br />
+            Trafego pago (Google, Facebook, Instagran).<br />
             Criação e remodelação de logomarcas.<br />
             Ajudamos empresas a ter uma melhor visibilidade na internet.
           </span>
         </div>
-
-       
 
         <div>
           <img src="./img/logo-mini-sem-fundo.png" alt="logo updatepro" />
@@ -432,18 +647,7 @@
           >
         </div>
 
-        <div class="container-footer-nav">
-          <span><b>Navegue</b></span>
-          <nav>
-            <ul>
-              <li><a class="active" href="#home">HOME</a></li>
-              <li><a href="#about">QUEM SOMOS</a></li>
-              <li><a href="#why">SERVIÇOS</a></li>
-              <li><a href="#faq">FAQ</a></li>
-              <li><a href="#contact">CONTATO</a></li>
-            </ul>
-          </nav>
-        </div>
+        
       </footer>
       <a
         href="https://api.whatsapp.com/send?1=pt_BR&phone=5541996500636"
