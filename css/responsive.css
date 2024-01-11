@@ -1,8 +1,29 @@
 /* Default 1920x1080 */
 
 
+@media (max-width: 1171px){
+  main h1 {
+    font-size: 3.5rem;
+
+  }
+
+  main h2 {
+      font-size: 1rem;
+  }
+
+  footer {
+    gap: 15px;
+  }
+  
+  footer div {
+    width: max-content;
+    max-width: 30%;
+  }
+
+}
+
 /* Tablets e Smartphones */
-@media (max-width: 915px)
+@media (max-width: 926px)
 {
 
 #popup {
