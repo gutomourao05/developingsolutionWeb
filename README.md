@@ -12,3 +12,4 @@ Site para fins de portifólio
 - HTML
 - CSS
 - Javascript
+- PHP
