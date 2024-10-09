@@ -59,8 +59,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
     gap: 10px;
+    scrollbar-width: none; /* Oculta a barra de rolagem */
+    -ms-overflow-style: none; /* Oculta a barra de rolagem */
+    overflow: hidden;
+
 }
+
+.loading::-webkit-scrollbar {
+    display: none; /* Oculta a barra de rolagem */
+  }
 
 .loading div {
     width: 50px;
