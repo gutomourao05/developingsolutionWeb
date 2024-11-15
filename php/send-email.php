@@ -1,5 +1,9 @@
 <?php
-  //Variáveis
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require '../vendor/autoload.php';
+
   $nome = $_POST['name'];
   $email = $_POST['email'];
   $phone = $_POST['phone'];
@@ -7,7 +11,6 @@
   $data_envio = date('d/m/Y');
   $hora_envio = date('H:i:s');
 
-  //Corpo E-mail
   $arquivo = "
       Nome: $nome\n
       Telefone: $phone\n
@@ -15,21 +18,31 @@
       Mensagem: $message\n
       Este e-mail foi enviado em $data_envio às $hora_envio
   ";
-  
-  //Emails para quem será enviado o formulário
-  $destino = "gutomourao05@gmail.com";
-  $assunto = "Contato pelo Site - Developing Solutions";
 
-  //Este sempre deverá existir para garantir a exibição correta dos caracteres
-  $headers = "MIME-Version: 1.1\n";
-  $headers .= "Content-type: text/html; charset=UTF-8\n";
-  $headers .= "From: $destino\n"; // remetente
-  $headers .= "Return-Path: $destino\n"; // return-path
-  $envio = mail($destino, $assunto, $arquivo, $headers);
- 
-  if($envio)
-  echo "Mensagem enviada com sucesso";
-  else
-  echo "A mensagem não pode ser enviada";
-    
+  $mail = new PHPMailer(true);
+
+  $subject = "Contato do site - developingsolutions.com.br";
+  try {
+
+      $mail->isSMTP();
+      $mail->Host       = ''; 
+      $mail->SMTPAuth   = true;                               
+      $mail->Username   = '';
+      $mail->Password   = '';                       
+      $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;     
+      $mail->Port       = 587;                                
+
+
+      $mail->setFrom('', 'Developing Solutions');
+      $mail->addAddress("");                              
+
+      $mail->isHTML(true);
+      $mail->Subject = $subject;
+      $mail->Body    = $arquivo;
+
+      $mail->send();
+      echo 'Mensagem enviada com sucesso';
+      } catch (Exception $e) {
+          echo "Mensagem não pôde ser enviada. Mailer Error: {$mail->ErrorInfo}";
+      }   
 ?>
